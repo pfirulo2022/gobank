@@ -34,7 +34,9 @@ type APIServer struct {
 }
 
 func NewAPIServer(listenAddr string) *APIServer {
-	return &APIServer{listenAddr: listenAddr}
+	return &APIServer{
+		listenAddr: listenAddr,
+	}
 }
 
 func (s *APIServer) Run() {
